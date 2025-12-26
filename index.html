@@ -1,107 +1,155 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZEPGA Consultores</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #004080;
-            color: #fff;
-            text-align: center;
-            padding: 20px 10px;
-        }
-        header img {
-            max-width: 150px;
-            display: block;
-            margin: 0 auto 10px auto;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        section {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #004080;
-            margin-top: 0;
-        }
-        ul {
-            margin: 10px 0 20px 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #004080;
-            color: #fff;
-            margin-top: 30px;
-        }
-        .cta {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #0073e6;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .cta:hover {
-            background-color: #005bb5;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>ZEPGA Consultores</title>
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+      margin: 0;
+      padding: 0;
+      color: #1a237e;
+    }
+    .header {
+      background: #2156a3; /* Azul menos oscuro */
+      color: #fff;
+      text-align: center;
+      padding: 40px 0 28px 0;
+      margin-bottom: 0;
+    }
+    .header .logo-img {
+      height: 90px;
+      width: auto;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(25, 118, 210, 0.10);
+      background: #fff;
+      margin-bottom: 18px;
+      margin-top: 8px;
+    }
+    .header h1 {
+      font-size: 2.6em;
+      font-weight: bold;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+    .header h2 {
+      font-size: 1.4em;
+      font-weight: bold;
+      margin: 12px 0 0 0;
+      letter-spacing: 0.5px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 32px auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 6px 32px rgba(25, 118, 210, 0.12);
+      padding: 40px 36px 32px 36px;
+    }
+    h3, h4 {
+      color: #1976d2;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+    h3 {
+      font-size: 1.2em;
+    }
+    h4 {
+      font-size: 1em;
+    }
+    ul {
+      margin-left: 24px;
+      margin-bottom: 16px;
+    }
+    .contacto {
+      margin-top: 32px;
+      padding: 16px;
+      background: #e3f2fd;
+      border-radius: 8px;
+      font-size: 1.1em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .contacto-icon {
+      font-size: 1.5em;
+      color: #1976d2;
+      margin-bottom: 8px;
+    }
+    .contacto-btn {
+      background: #1976d2;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      padding: 12px 28px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 8px;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
+    }
+    .contacto-btn:hover {
+      background: #0d1a36;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #888;
+      font-size: 0.95em;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 16px 4px;
+      }
+      .header h1 {
+        font-size: 1.3em;
+      }
+      .header .logo-img {
+        height: 60px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <!-- Logo -->
-        <img src="Zepga-logo.png" alt="Zepga-logo">
-        <h1>ZEPGA Consultores</h1>
-        <p>Desarrollo de Soluciones Escalables a la Medida</p>
-    </header>
-
-    <section>
-        <h2><b>¿Quienes somos?</b></h2>
-        <p><b>ZEPGA Consultores</b> se especializa en el diseño, desarrollo e implementaciones de soluciones informáticas hechas a la medida del cliente, orientadas a arquitecturas modernas, escalables y de alto rendimiento. Nuestro trabajo integra prácticas avanzadas de ingeniería de software, automatización de procesos, optimización de infraestructura y desarrollo de aplicaciones robustas basadas en estándares actuales de la industria.</p>
-    </section>
-
-    <section>
-        <h2><b>Experiencia en Arquitectura y Administración de Bases de Datos</b></h2>
-        <h3><b>Microsoft SQL Server</b></h3>
-        <ul>
-            <li>Diseño de modelos relacionales normalizados y desnormalizados según requerimientos funcionales y de rendimiento</li>
-            <li>Implementación de Query Store, DMVs, Extended Events y Always On Availability Groups para monitoreo, diagnóstico y alta disponibilidad</li>
-            <li>Optimización de planes de ejecución, particionamiento de tablas y estrategias avanzadas de indexación </li>
-            <li>Automatización de procesos mediante SQL Agent Jobs, PowerShell y T-SQL avanzado</li>
-        </ul>
-        <h3><b>Oracle Database</b></h3>
-        <ul>
-            <li>Diseño de esquemas optimizados para cargas OLTP y OLAP</li>
-            <li>Gestión de tablespaces, particionamiento, materialized views y tuning de consultas</li>
-            <li>Automatización mediante PL/SQL, Scheduler Jobs y herramientas de administración de Oracle</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2><b>Compromiso con la calidad y la arquitectura empresarial</b></h2>
-        <p>En <b>ZEPGA Consultores</b> entregamos soluciones robustas, seguras y alineadas con estándares modernos de arquitectura. Garantizamos integridad de datos, rendimiento sostenido y escalabilidad tanto horizontal como vertical, adaptándonos a las necesidades específicas de cada cliente</p>
-        <a href="mailto:pzambrano.Zepga.contacto@gmail.com" class="cta">Contáctanos</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 ZEPGA Consultores. Todos los derechos reservados.</p>
-    </footer>
+  <div class="header">
+    <img src="https://github.com/pfzambranog/Zepga/raw/main/Zepga-logo.png" alt="Zepga Logo" class="logo-img">
+    <h1>ZEPGA Consultores</h1>
+    <h2>Desarrollo de Soluciones Escalables a la Medida</h2>
+  </div>
+  <div class="container">
+    <h3>¿Quiénes somos?</h3>
+    <p><b>ZEPGA Consultores</b> se especializa en el diseño, desarrollo e implementación de soluciones informáticas hechas a la medida del cliente, orientadas a arquitecturas modernas, escalables y de alto rendimiento. Nuestro trabajo integra prácticas avanzadas de ingeniería de software, automatización de procesos, optimización de infraestructura y desarrollo de aplicaciones robustas basadas en estándares actuales de la industria.</p>
+    <h3>Experiencia en Arquitectura y Administración de Bases de Datos</h3>
+    <h4>🗄️ Microsoft SQL Server</h4>
+    <ul>
+      <li>Diseño de modelos relacionales normalizados y desnormalizados según requerimientos funcionales y de rendimiento</li>
+      <li>Implementación de Query Store, DMVs, Extended Events y Always On Availability Groups para monitoreo, diagnóstico y alta disponibilidad</li>
+      <li>Optimización de planes de ejecución, particionamiento de tablas y estrategias avanzadas de indexación</li>
+      <li>Automatización de procesos mediante SQL Agent Jobs, PowerShell y T-SQL avanzado</li>
+    </ul>
+    <h4>🗄️ Oracle Database</h4>
+    <ul>
+      <li>Diseño de esquemas optimizados para cargas OLTP y OLAP</li>
+      <li>Gestión de tablespaces, particionamiento, materialized views y tuning de consultas</li>
+      <li>Automatización mediante PL/SQL, Scheduler Jobs y herramientas de administración de Oracle</li>
+    </ul>
+    <h3>Compromiso con la calidad y la arquitectura empresarial</h3>
+    <p>En <b>ZEPGA Consultores</b> entregamos soluciones robustas, seguras y alineadas con estándares modernos de arquitectura. Garantizamos integridad de datos, rendimiento sostenido y escalabilidad tanto horizontal como vertical, adaptándonos a las necesidades específicas de cada cliente.</p>
+    <div class="contacto">
+      <span class="contacto-icon">📧</span>
+      <a class="contacto-btn" href="mailto:pzambrano.Zepga.contacto@gmail.com">Contáctanos</a>
+    </div>
+    <div class="footer">
+      © 2025 ZEPGA Consultores. Todos los derechos reservados.
+    </div>
+  </div>
 </body>
 </html>
